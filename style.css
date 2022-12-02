@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 3451px;
+    overflow-x: hidden;
+    background: #FFFFFF;
+}
+
+
+/* NAVBAR STYLING */
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100.45px;
+}
+
+.logo{
+    width: 311px;
+    height: 49px;
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icons > i {
+    background-color: #3683F0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#group1{
+    position: absolute;
+    left: 1133px;
+    top: 25.77px;
+}
+
+#group2{
+    position: absolute;
+    left: 1186px;
+    top: 25.77px;
+}
+    
+#group3{
+    position: absolute;
+    left: 1239px;
+    top: 25.77px;
+}
+
+.profile{
+    width: 40.36px;
+    height: 40px;
+    position: absolute;
+    left: 1293px;
+    top: 24px;
+    background: url("./assets/Ellipse 53.png");
+    border-radius: 250px;
+}
+
+.ellipse::before{
+    position: relative;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+    color: white;
+}
+
+#dot1{
+    position: absolute;
+    width: 3.03px;
+    height: 2.99px;
+    left: 1356px;
+    top: 35px;
+    
+    /* info */
+    
+    background: #3683F0;
+}
+
+#dot2{
+    
+    position: absolute;
+    width: 3.03px;
+    height: 2.99px;
+    left: 1356px;
+    top: 40.98px;
+    
+    /* info */
+    
+    background: #3683F0;
+}
+
+#dot3{
+    position: absolute;
+    width: 3.03px;
+    height: 2.99px;
+    left: 1356px;
+    top: 46.97px;
+
+    /* info */
+
+    background: #3683F0;
+}
+
+/* NAVBAR STYLING */
+
+
+
+
+
+
+/* TOGGLE MENU STYLING */
+.items-section{
+    position: absolute;
+    width: 96px;
+    height: 800px;
+    left: 0px;
+    top: 255px;
+    background-color: #fffdfd;
+    color: white;
+    border-right: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    /* border-right: 1px solid gray; */
+    }
+
+
+.items-section >p {
+    border: 1px solid  #0029FF;
+    color: #0029FF;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: 500;
+    }
+
+
+    .menu-bars{
+        position: absolute;
+        left: 0;
+        top:222px;
+        width: 96px;
+        height:35px;
+        background-color: black;
+        color: white;
+        border-top-right-radius: 12px;
+        text-align: right;
+        padding-right: 12px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+
+
+    .toggle-menu-container{
+        /* position: absolute;
+        left: 0;
+        top:222px; */
+        width: 260px;
+        height:35px;
+        background-color: black;
+        color: white;
+       overflow: visible;
+        border-top-right-radius: 12px;
+        text-align: right;
+        padding-right: 12px;
+        padding-top: 10px; 
+        z-index: 1;
+        
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: calc(100vh - 9.5rem);
+        
+        
+    }
+
+
+
+    .toggle-menu-container.active{
+        left: 0;
+        top: 222px;
+       
+    }
+
+    #close-menu{
+        cursor: pointer;
+    }
+
+    .toggle-menu-bars{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+
+    .toggle-menu-bars>p{
+        margin-left: 60px;
+        font-size: 18px;
+       margin-bottom: 30px;
+    }
+
+    .menu-toggle-title{
+        /* margin: auto;
+        text-align: center; */
+    position: absolute;
+    width: 260px;
+    height: 800px;
+    left: 0px;
+    top: 35px;
+    background-color: #fffdfd;
+    color: black;
+    border-right: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    
+    }
+
+
+    .menu-toggle-title >p{
+        padding: 20px 0 10px 0;
+        color: #424242;
+        font-size: 16px;
+    }
+
+
+    .menu-toggle-title >p::after {
+    
+        border-bottom: 2px solid #eeeeee;
+       padding-bottom: 10px;
+       padding: 5px;
+       content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+         /* This will center the border. */
+        width: 70%;
+        margin: auto;
+    }
+
+  
+
+
+    .assets-items{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .assets-items > ul >li{
+        padding: 10px 0 10px 0;
+        color: #757575;
+        cursor: pointer;
+    }
+    .assets-items > ul >li::after{
+        content: "";  
+        display: block; 
+        width: 100%; 
+        border-bottom: 2px solid #eeeeee;
+        padding: 5px;
+    }
+/* TOGGLE MENU STYLING */
+
+
+
+
+
+/* ASSET CARD STYLING */
+
+.main-right-titleBar{
+    position: absolute;
+    width: 1136px;
+    height: 51px;
+    left: 177px;
+    top: 222px;
+
+    background: #0029FF;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main-right-titleBar >p {
+    color: white;
+    text-transform: capitalize;
+    margin: 15px 0 0 25px;
+}
+
+.main-right-card-section{
+    position: absolute;
+    width: 1136px;
+    height: 2849px;
+    left: 177px;
+    top: 273px;
+    
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+    }
+
+    .card-section-title{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+        }
+
+
+    .cards{
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3px; */
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+         
+        }
+
+    .box{
+            width: 461px;
+            height: 100%;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            position:relative;
+            overflow: hidden;
+            margin: 30px;
+        }
+
+    .image img{
+    width: 100%;
+    }
+
+
+    .box-title{
+        background-color: black;
+        color: white;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    i{
+        float: right;
+        padding-right: 15px;
+    }
+    
+    #other>div{
+        width: 400px;
+        height: 200px;
+        margin: auto;
+        color: #bdbdbd;
+    }
+
+    .other-info{
+        border-radius: 18px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #link-to-icon{
+            position: absolute;
+            left: 82%;
+            background-color: gray;
+            padding: 10px;
+            color: #FFFFFF;
+            
+        }
+        
+        audio{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .iframe-container{
+            margin-top: 0;
+        }
+        
+        #desc{
+          padding: 15px;  
+        }
+        
+
+/* ASSET CARD STYLING */
